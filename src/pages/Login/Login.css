@@ -1,0 +1,87 @@
+.login {
+  display: flex;
+  background-color: #f6f6f6;
+  width: 50vw;
+  height: 90vh;
+  margin-top: -20px;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+  width: 456px;
+  margin: auto;
+  padding-bottom: 24px;
+}
+
+.login__container img {
+  width: 100px;
+  height: 100px;
+}
+
+.login__container h1 {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.login__error {
+  color: #ff6666;
+  font-size: 14px;
+  text-align: end;
+}
+
+.login__form {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.login__form > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.login__form input {
+  line-height: 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ededed;
+  padding: 4px 8px;
+  outline-color: #4bca5a;
+}
+
+.login__form > button {
+  margin-top: 12px;
+  padding: 12px 0px;
+  border: none;
+  border-radius: 24px;
+  background-color: #4bca5a;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.login__form > button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.login__form > button:not(:disabled):hover {
+  background-color: #28a737;
+}
+
+.login__form > button:active {
+  transform: scale(0.96);
+}
+
+.login__container > a {
+  color: black;
+  font-size: 14px;
+}
